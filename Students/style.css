@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville&family=Merriweather:ital,wght@0,700;1,700&family=Montserrat:wght@400;700;900&family=Roboto+Condensed:wght@700&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    background-color: #E5E5E5;
+}
+.nav-link:hover {
+    background-color: #d2d3c5 !important
+}
+.nav-link .fa {
+    transition: all 1s
+}
+
+.nav-link:hover .fa {
+    transform: rotate(360deg)
+}
+.Sidbar{
+    background: #FAFFC1;
+    height: 100vh;
+    width: 240px;
+}
+.E-classe{
+    font-size: medium;
+}
+#AdminName{
+    font-size: medium;
+}
+#Admin{
+    font-size: small;
+}
+.nav{
+    font-size: 80%;
+}
+.nvr{
+    font-size: small;
+}
+.tab{
+    font-size: smaller;
+}
+
+@media screen and (max-width: 900px){
+   .nvr{
+    font-size: x-small;
+   } 
+}
