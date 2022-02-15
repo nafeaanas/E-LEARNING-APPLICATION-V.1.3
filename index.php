@@ -16,8 +16,14 @@
               </div>
               <div class="px-4 text-center">
                       <p class="sign"><strong>SIGN IN</strong></p>
-                      <p class="enter text-muted ">Enter your credentials to access your account</p>
-              </div>
+                      <?php
+                         if(isset($_GET['error'])){
+                              echo '<p class="text-danger">Password or Email is incorrect !</p>';
+                         }
+                         else {
+                              echo '<p class="enter text-muted ">Enter your credentials to access your account</p>';
+                         }
+                      ?>              </div>
               <form class="p-4" action="login.php" method="POST">
                   <div class="mb-3">
                        <label for="exampleInputEmail1" class="form-label ">Email</label>
