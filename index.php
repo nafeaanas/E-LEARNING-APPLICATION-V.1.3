@@ -28,11 +28,11 @@
                    <?php session_start(); ?>
                   <div class="mb-3">
                        <label for="exampleInputEmail1" class="form-label ">Email</label>
-                       <input type="email" value="<?php if($_SESSION['email']){echo $_SESSION['email'];} ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" name="email">
+                       <input type="email" value="<?php if(isset($_SESSION['email'])){echo $_SESSION['email'];} ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" name="email">
                   </div>
                   <div class="mb-3">
                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                       <input type="password" value="<?php if($_SESSION['password']) {echo $_SESSION['password'];} ?>" class="form-control" id="exampleInputPassword1" placeholder="Enter your password" name="password">
+                       <input type="password" value="<?php if(isset($_SESSION['password'])) {echo $_SESSION['password'];} ?>" class="form-control" id="exampleInputPassword1" placeholder="Enter your password" name="password">
                   </div>
                   <div>
                        <input type="checkbox" name="remember_me" id="remember_me">
